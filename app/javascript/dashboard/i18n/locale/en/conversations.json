@@ -1,0 +1,10 @@
+{
+  "CONVERSATIONS": {
+    "KANBAN": {
+      "OPEN": "Open",
+      "PENDING": "Pending",
+      "SNOOZED": "Snoozed",
+      "RESOLVED": "Resolved"
+    }
+  }
+}

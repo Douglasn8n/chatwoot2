@@ -1,5 +1,6 @@
 import settings from './settings/settings.routes';
 import conversation from './conversation/conversation.routes';
+import conversationsKanban from './conversations/kanban';
 import { routes as searchRoutes } from '../../modules/search/search.routes';
 import { routes as contactRoutes } from './contacts/routes';
 import { routes as notificationRoutes } from './notifications/routes';
@@ -20,6 +21,7 @@ export default {
         ...captainRoutes,
         ...inboxRoutes,
         ...conversation.routes,
+        ...conversationsKanban.routes,
         ...settings.routes,
         ...contactRoutes,
         ...searchRoutes,
