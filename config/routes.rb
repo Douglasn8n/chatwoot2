@@ -126,6 +126,7 @@ Rails.application.routes.draw do
               post :unmute
               post :transcript
               post :toggle_status
+              patch :update_status
               post :toggle_priority
               post :toggle_typing_status
               post :update_last_seen

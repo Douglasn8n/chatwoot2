@@ -88,6 +88,12 @@ class Api::V1::Accounts::ConversationsController < Api::V1::Accounts::BaseContro
     assign_conversation if should_assign_conversation?
   end
 
+  def update_status
+    set_conversation_status
+    @conversation.save!
+    head :ok
+  end
+
   def pending_to_open_by_bot?
     return false unless Current.user.is_a?(AgentBot)
 
